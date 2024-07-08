@@ -321,6 +321,12 @@ body:not(.user-is-tabbing) a:focus {
     border-bottom: 1px solid var(--pink);
 }
 
+.link__text img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem; /* Optional: fügt etwas Abstand zwischen Text und Bild hinzu */
+}
+
 .link__text::after {
     content: '';
     display: block;
@@ -571,6 +577,10 @@ body:not(.user-is-tabbing) a:focus {
 .client__logo {
     height: 6.5rem;
     max-width: 18rem;
+}
+
+.client__logo:hover {
+    transform: scale(1.2);
 }
 
 @media(max-width: 1240px) {
